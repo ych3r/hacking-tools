@@ -9,7 +9,7 @@ def bing_search(site, pages):
     headers = {}
     
     for i in range(1, int(pages) + 1):
-        url = ""
+        url = "https://cn.bing.com/search?q=site%3a" + site + "&go=Search&qs=ds&first=" + str((int(i) - 1) * 10) + "&FORM=PERE"
         conn = requests.session()
         conn.get('http://cn.bing.com', headers=headers)
         html = conn.get(url, stream = True, headers = headers, timeout = 8)
