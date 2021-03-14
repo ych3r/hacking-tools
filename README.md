@@ -1,2 +1,2 @@
 # hacking-tools
-Build my own hacking tools for learning.
+Learning code by building my own hacking tools.
