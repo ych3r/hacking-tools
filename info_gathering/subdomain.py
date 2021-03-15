@@ -27,10 +27,11 @@ def bing_search(site, pages):
 def main():
     if len(sys.argv) == 3:
         site = sys.argv[1]
-        page = sys.argv[2]
+        page = sys.argv[2] 
     else:
         print("usage: %s xx.com 10" % sys.argv[0])
         sys.exit(-1)
+    
     subdomain = bing_search(site, page)
 
 if __name__ == '__main__':
